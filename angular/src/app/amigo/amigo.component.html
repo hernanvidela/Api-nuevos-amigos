@@ -1,0 +1,21 @@
+<div class="container">
+    <table cellspacing='0'>
+        <thead>
+            <tr>
+                <th colspan=3>
+                    <div [style.font-size.em]='3'>Amigos</div>
+                </th>
+            </tr>
+            <tr>
+                <th [style.font-size.em]='3'>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of amigos">
+                <td>{{i.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-danger" [routerLink]="['/nuevoAmigo']">Agregar Amigo</button>
+    <button class="btn btn-danger" [routerLink]="['/']">Volver</button>
+</div>
